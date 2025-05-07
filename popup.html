@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notion Quick Links</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Notion Quick Links</h1>
+
+      <div id="config-status">
+        <div id="status-message">Checking configuration...</div>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search link..." />
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <div class="instructions">
+        <p>
+          Use <strong>get</strong> + <strong>Tab</strong> + <strong>name</strong> in the address bar
+          to quickly access your links.
+        </p>
+        <button id="optionsBtn">Settings</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

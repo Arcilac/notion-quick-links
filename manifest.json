@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Notion Quick Links",
+  "version": "1.0",
+  "description": "Redirect to Notion pages quickly using a custom keyword",
+  "permissions": ["storage", "tabs", "webNavigation"],
+  "host_permissions": ["https://api.notion.com/*", "*://get/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "omnibox": {
+    "keyword": "get"
+  },
+  "content_scripts": [],
+  "web_accessible_resources": [],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "Open the extension popup"
+    }
+  }
+}
