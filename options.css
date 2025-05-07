@@ -1,46 +1,59 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   margin: 0;
-  padding: 20px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #333;
+  line-height: 1.6;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 h1 {
-  color: #333;
+  color: #2e3440;
   margin-top: 0;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eceff4;
+  font-size: 28px;
+  text-align: center;
+  position: relative;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #4c566a;
+  font-size: 16px;
 }
 
 input[type='text'],
 input[type='password'] {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px;
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e5e9f0;
+  border-radius: 8px;
+  font-size: 15px;
   box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #f9fafc;
+  color: #2e3440;
 }
 
 .password-container {
@@ -64,55 +77,71 @@ input[type='password'] {
 }
 
 .toggle-password:hover {
-  color: #333;
+  color: #5e81ac;
 }
 
 .help-text {
-  margin-top: 5px;
-  color: #777;
-  font-size: 12px;
+  margin-top: 8px;
+  color: #7b88a1;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 button {
-  background-color: #2e75b7;
+  background: linear-gradient(135deg, #5e81ac 0%, #81a1c1 100%);
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 12px 25px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(94, 129, 172, 0.2);
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 button:hover {
-  background-color: #1f5a8e;
+  background: linear-gradient(135deg, #81a1c1 0%, #5e81ac 100%);
+  box-shadow: 0 6px 10px rgba(94, 129, 172, 0.3);
+  transform: translateY(-2px);
 }
 
 #status {
-  margin-top: 15px;
-  padding: 10px;
-  border-radius: 4px;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .success {
-  background-color: #dff0d8;
-  color: #3c763d;
+  background-color: #e0f2e9;
+  color: #38a169;
+  border-left: 4px solid #38a169;
 }
 
 .error {
-  background-color: #f2dede;
-  color: #a94442;
+  background-color: #fbe8e8;
+  color: #e53e3e;
+  border-left: 4px solid #e53e3e;
 }
 
 .instructions {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eceff4;
 }
 
 .instructions h2 {
   margin-top: 0;
-  color: #333;
+  margin-bottom: 20px;
+  color: #2e3440;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
 }
 
 .instructions ol {
@@ -120,12 +149,16 @@ button:hover {
 }
 
 .instructions li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  position: relative;
 }
 
 a {
   color: #2e75b7;
   text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px dotted #5e81ac;
+  padding-bottom: 1px;
 }
 
 a:hover {

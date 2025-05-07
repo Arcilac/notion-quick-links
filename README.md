@@ -19,8 +19,6 @@ A Chrome extension that allows you to quickly access links stored in a Notion da
    git clone https://github.com/Arcilac/notion-quick-links
    ```
 
-   Alternatively, download the ZIP file and extract it to a folder.
-
 2. Open Chrome and navigate to `chrome://extensions/`
 
 3. Enable "Developer mode" by toggling the switch in the top-right corner.
