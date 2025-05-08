@@ -114,6 +114,63 @@ h1::after {
   transform: translateY(1px);
 }
 
+.links-container {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-height: 200px;
+  display: none;
+}
+
+.links-header {
+  background: linear-gradient(135deg, #5e81ac 0%, #81a1c1 100%);
+  color: white;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.links-list {
+  max-height: 160px;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.link-item {
+  padding: 8px 15px;
+  border-bottom: 1px solid #eceff4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 13px;
+}
+
+.link-item:last-child {
+  border-bottom: none;
+}
+
+.link-item:hover {
+  background-color: #f0f4f9;
+}
+
+.loading {
+  text-align: center;
+  color: #7b88a1;
+  padding: 15px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.no-links {
+  text-align: center;
+  color: #7b88a1;
+  padding: 15px;
+  font-size: 13px;
+}
+
 .instructions {
   font-size: 13px;
   color: #7b88a1;
@@ -151,7 +208,6 @@ h1::after {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Add a subtle animation for the popup opening */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -167,7 +223,21 @@ body {
   animation: fadeIn 0.3s ease-out;
 }
 
-/* Custom scrollbar for the popup */
+@keyframes fadeInItem {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.link-item {
+  animation: fadeInItem 0.2s ease-out forwards;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
